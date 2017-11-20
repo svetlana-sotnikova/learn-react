@@ -7,7 +7,9 @@ import registerServiceWorker from './registerServiceWorker';
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker()
 
+const elem = <h1>Hello, world!</h1>;
+
 ReactDOM.render(
-  <h1>Hello, world!</h1>,
+  elem,
   document.getElementById('root')
 );
