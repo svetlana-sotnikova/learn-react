@@ -3,11 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+import elem from './elem.js';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker()
-
-const elem = <h1>Hello, world!</h1>;
 
 ReactDOM.render(
   elem,
