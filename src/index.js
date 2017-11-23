@@ -4,11 +4,12 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import elem from './elem.js';
+import button from './button.js';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker()
 
 ReactDOM.render(
-  elem,
+  button,
   document.getElementById('root')
 );
