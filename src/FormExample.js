@@ -30,6 +30,7 @@ export default class FormExample extends React.Component {
           validationState={this.getValidationState()}
         >
           <ControlLabel>Working example with validation</ControlLabel>
+          {this.props.text}
           <FormControl
             type="text"
             value={this.state.value}
@@ -51,6 +52,3 @@ export const buttonsInstance = (
     <Button bsStyle="primary">Сохранить</Button>
   </ButtonToolbar>
 );
-
-// export default FormExample;
-// export buttonsInstance;

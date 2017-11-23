@@ -10,6 +10,6 @@ ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker()
 
 ReactDOM.render(
-  <FormExample />,
+  <FormExample text="Hi, man!" />,
   document.getElementById('root')
 );
