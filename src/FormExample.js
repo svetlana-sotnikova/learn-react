@@ -5,8 +5,14 @@ import { FormControl } from 'react-bootstrap';
 import { HelpBlock } from 'react-bootstrap';
 
 export default class FormExample extends React.Component {
-  state = {
-    value: ''
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: ''
+    };
+
+    // This binding is necessary to make `this` work in the callback
+    this.handleChange = this.handleChange.bind(this);
   }
 
   getValidationState() {
